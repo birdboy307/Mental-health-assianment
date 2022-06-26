@@ -11,7 +11,7 @@ export default function Anxiety() {
       <div className="flex justify-center">
         <div className="w-3/4 h-fit">
           <article className="text-lg">
-            <img class="float-right rounded-lg w-96 m-8" src="https://www.helpguide.org/wp-content/uploads/woman-suffering-an-anxiety-attack-alone-in-the-night-picture.jpg"/>
+            <img className="float-right rounded-lg w-96 m-8" src="https://www.helpguide.org/wp-content/uploads/woman-suffering-an-anxiety-attack-alone-in-the-night-picture.jpg"/>
             <h1 className="text-6xl font-semibold my-10">Anxiety</h1>
             <div className="my-6">
               <h2 className="text-2xl font-medium">What is it</h2>

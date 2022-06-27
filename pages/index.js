@@ -2,10 +2,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 const items = [
-  { title: 'ADHD', href: "ADHD", image: "https://media.istockphoto.com/photos/the-abbreviation-adhd-made-out-of-polymer-clay-letters-picture-id1303169559?b=1&k=20&m=1303169559&s=170667a&w=0&h=46YXobqWjkVsX5UYMkutk70BhakDWjUK83QRsTgbprU=", description: "description" },
-  { title: 'PTSD', href: "PTSD", image: "https://media.istockphoto.com/photos/panic-attack-in-public-place-woman-having-panic-disorder-in-city-picture-id1033774292?b=1&k=20&m=1033774292&s=170667a&w=0&h=PY6mrwiNAcCc4_MR49jdYrbIv3kSDX8RGlDMnCjbcu8=", description: "description" },
-  { title: 'Depression', href: "Depression", image: "https://media.istockphoto.com/photos/its-okay-to-ask-for-help-with-your-mental-health-picture-id1294430340?b=1&k=20&m=1294430340&s=170667a&w=0&h=TkDySvmR1jb4tQbATz9d8ALBJ5A_gw0nAOsHo2JDV2k=", description: "description" },
-  { title: 'Anxiety', href: "Anxiety", image: "https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW54aWV0eXxlbnwwfHwwfHw%3D&w=1000&q=80", description: "description" },
+  { title: 'ADHD', href: "adhd", image: "https://media.istockphoto.com/photos/the-abbreviation-adhd-made-out-of-polymer-clay-letters-picture-id1303169559?b=1&k=20&m=1303169559&s=170667a&w=0&h=46YXobqWjkVsX5UYMkutk70BhakDWjUK83QRsTgbprU=", description: "description" },
+  { title: 'PTSD', href: "ptsd", image: "https://media.istockphoto.com/photos/panic-attack-in-public-place-woman-having-panic-disorder-in-city-picture-id1033774292?b=1&k=20&m=1033774292&s=170667a&w=0&h=PY6mrwiNAcCc4_MR49jdYrbIv3kSDX8RGlDMnCjbcu8=", description: "description" },
+  { title: 'Depression', href: "depression", image: "https://media.istockphoto.com/photos/its-okay-to-ask-for-help-with-your-mental-health-picture-id1294430340?b=1&k=20&m=1294430340&s=170667a&w=0&h=TkDySvmR1jb4tQbATz9d8ALBJ5A_gw0nAOsHo2JDV2k=", description: "description" },
+  { title: 'Anxiety', href: "anxiety", image: "https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW54aWV0eXxlbnwwfHwwfHw%3D&w=1000&q=80", description: "description" },
 ]
 
 export default function Home() {
@@ -16,10 +16,10 @@ export default function Home() {
         <meta name="description" content="A PHS student project" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div classNameName='flex justify-center'>
-        <div classNameName='grid grid-cols-3 gap-6 list-none'>
+      <div className='flex justify-center'>
+        <div className='grid grid-cols-2 gap-12 list-none'>
           {items.map((item) => (
-            <div key={item} className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md ">
+            <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md ">
               <a>
                   <img className="rounded-t-lg" src={item.image} alt="" />
               </a>
@@ -27,7 +27,6 @@ export default function Home() {
               <a>
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">{item.title}</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700">{item.description}</p>
                   <button>
                       <Link href={item.href}>
                           <a className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
